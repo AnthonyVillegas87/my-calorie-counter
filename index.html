@@ -3,10 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Calorie Counter</title>
 </head>
 <body>
+<nav class="nav-wrapper red">
+    <div class="container">
+        <a href="#" class="brand-logo center">My Calorie Count</a>
+        <ul class="right">
+            <li><a href="#" class="clear-btn btn red lighten-2">Clear All</a></li>
+        </ul>
+    </div>
+</nav>
+
+<br>
+
+<div class="container">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Add Food Item</span>
+            <form class="col">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="Add Item" id="item-name">
+                        <label for="item-name">Meal</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="Add Calories" id="item-calories">
+                        <label for="item-calories">Calories</label>
+                    </div>
+                    <button class="add-btn btn blue-grey darken-2"><i class="material-icons">add</i> Add Meal</button>
+                    <button class="update-btn btn orange darken-2"><i class="material-icons">update</i> Update Meal</button>
+                    <button class="delete-btn btn cyan darken-4"><i class="material-icons">remove</i> Delete Meal</button>
+                    <button class="back-btn btn indigo darken-2 pull-right"><i class="material-icons">backspace</i> Back</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- Calorie Count   -->
+    <h3 class="center-align">Total Calories: <span class="total-calories">0</span></h3>
+<!-- List   -->
+    <ul id="item-list" class="collection">
+        <!--
+        <li class="collection-item" id="item-0">
+            <strong>Steak Dinner: </strong><em>800 calories</em>
+            <a href="#" class="secondary-content">
+                <i class="material-icons">create</i>
+            </a>
+        </li>
+        <li class="collection-item" id="item-0">
+            <strong>Cookie: </strong><em>400 calories</em>
+            <a href="#" class="secondary-content">
+                <i class="material-icons">create</i>
+            </a>
+        </li>
+        <li class="collection-item" id="item-0">
+            <strong>Eggs: </strong><em>300 calories</em>
+            <a href="#" class="secondary-content">
+                <i class="material-icons">create</i>
+            </a>
+        </li>
+        -->
+    </ul>
+</div>
 
 
 
